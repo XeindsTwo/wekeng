@@ -1,0 +1,46 @@
+.tokenomics {
+  margin-bottom: 90px;
+
+  &__items {
+    @include flex-align-center(27);
+    margin: 50px auto 0;
+    justify-content: center;
+  }
+
+  &__item {
+    @include flex-column(0);
+    padding: 0 24px 18px;
+    align-self: stretch;
+    max-width: 310px;
+    width: 100%;
+    min-height: 385px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: $beige;
+    flex-grow: 1;
+  }
+
+  &__img {
+    @include objectCoverBg;
+    margin-bottom: 60px;
+
+    &.one {
+      margin-top: 52px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 11px;
+    display: block;
+    font-family: $ceaser;
+    font-size: 28px;
+    letter-spacing: -0.84px;
+    line-height: .95;
+    margin-top: auto;
+  }
+
+  &__text {
+    line-height: 1.1;
+    color: rgba($black, .8);
+  }
+}

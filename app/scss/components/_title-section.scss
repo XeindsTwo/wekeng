@@ -1,0 +1,16 @@
+.title-section {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: .95;
+  font-family: $ceaser;
+  letter-spacing: -1.26px;
+  text-transform: uppercase;
+
+  &.center {
+    text-align: center;
+  }
+
+  &.bottom {
+    margin-bottom: 72px;
+  }
+}
