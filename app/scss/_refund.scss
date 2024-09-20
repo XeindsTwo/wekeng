@@ -1,45 +1,58 @@
 .refund {
   background-color: $yellow;
   border-radius: 0 0 24px 24px;
-  padding-bottom: 65px;
+  padding: 110px 0;
+  @media (max-width: 1300px) {
+    padding: 80px 0;
+  }
+  @media (max-width: 1100px) {
+    padding: 70px 0;
+  }
   @include r($lg) {
-    padding-bottom: 50px;
+    padding: 60px 0 40px;
   }
   @include r($tablet) {
-    padding-bottom: 36px;
+    padding: 50px 0 40px;
+  }
+  @media (max-width: 540px) {
+    padding: 45px 0 35px;
   }
   @media (max-width: 415px) {
     border-radius: 0 0 18px 18px;
-    padding-bottom: 30px;
+    padding: 40px 0 40px;
   }
 
   &__img {
     margin: 0 auto 60px;
+    @media (max-width: 1400px) {
+      width: auto;
+      height: 420px;
+    }
     @include r($desktop) {
       width: auto;
-      height: 240px;
+      height: 380px;
+    }
+    @media (max-width: 1100px) {
+      height: 360px;
     }
     @include r($lg) {
-      height: 220px;
-    }
-    @media (max-width: 860px) {
-      height: 200px;
+      height: 340px;
     }
     @include r($tablet) {
-      height: 185px;
+      height: 300px;
       margin-bottom: 50px;
     }
     @include r($sm) {
-      height: 170px;
+      height: 270px;
     }
     @include r($phone) {
-      height: 150px;
+      height: 240px;
     }
     @media (max-width: 390px) {
-      height: 135px;
+      height: 230px;
     }
     @media (max-width: 360px) {
-      height: 125px;
+      height: 220px;
     }
   }
 
@@ -113,6 +126,9 @@
   }
 
   &__btn {
+    display: flex;
+    max-width: max-content;
+    margin: 0 auto;
     background-color: $black;
     border-radius: 16px;
     padding: 24px 32px;

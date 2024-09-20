@@ -82,7 +82,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $yellow;
+  background-color: rgba($black, .6);
   border-radius: 50px;
   border: 2px solid $light-gray;
 }
