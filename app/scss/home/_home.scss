@@ -2,7 +2,7 @@
   @include bg;
   overflow: hidden;
   border-radius: 0 0 24px 24px;
-  background-image: url("../../images/home.png");
+  background-image: url("../images/home.png");
   @include r($lg) {
     background-position: -16cm 0cm;
   }
