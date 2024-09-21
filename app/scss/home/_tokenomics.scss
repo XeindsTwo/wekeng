@@ -1,10 +1,28 @@
 .tokenomics {
   margin-bottom: 90px;
 
+  &__title {
+    @media (max-width: 395px) {
+      max-width: 200px;
+      margin: 0 auto;
+      line-height: 1.07;
+    }
+  }
+
   &__items {
     @include flex-align-center(27);
     margin: 50px auto 0;
     justify-content: center;
+    @include r($lg) {
+      margin-top: 35px;
+      gap: 20px;
+    }
+    @include r($tablet) {
+      gap: 17px;
+    }
+    @media (max-width: 530px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -18,6 +36,19 @@
     overflow: hidden;
     background-color: $beige;
     flex-grow: 1;
+    @include r($tablet) {
+      border-radius: 18px;
+    }
+    @media (max-width: 670px) {
+      padding: 0 20px 18px;
+    }
+    @media (max-width: 580px) {
+      min-height: 350px;
+    }
+    @media (max-width: 530px) {
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 
   &__img {
@@ -25,7 +56,32 @@
     margin-bottom: 60px;
 
     &.one {
-      margin-top: 52px;
+      margin: 42px auto 0;
+      @media (max-width: 670px) {
+        width: auto;
+        height: 145px;
+      }
+      @media (max-width: 580px) {
+        height: 135px;
+      }
+      @media (max-width: 530px) {
+        height: 130px;
+      }
+    }
+
+    &.two {
+      object-fit: contain;
+      margin-left: 20px;
+      @media (max-width: 670px) {
+        width: auto;
+        height: 186px;
+      }
+      @media (max-width: 580px) {
+        height: 176px;
+      }
+      @media (max-width: 530px) {
+        margin-left: 32px;
+      }
     }
   }
 
@@ -37,6 +93,10 @@
     letter-spacing: -0.84px;
     line-height: .95;
     margin-top: auto;
+    @include r($phone) {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
   }
 
   &__text {
