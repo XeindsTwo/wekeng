@@ -5,9 +5,6 @@
     @include r($lg) {
       padding: 23px 0;
     }
-    @include r($tablet) {
-      padding: 20px 0;
-    }
     @media (max-width: 640px) {
       flex-direction: column;
       gap: 25px;

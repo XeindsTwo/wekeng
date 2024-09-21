@@ -1,3 +1,3 @@
-import {bindScrollToLinks} from "./gsap.js";
+import {bindScrollToLinks} from "./scroll.js";
 
 bindScrollToLinks();

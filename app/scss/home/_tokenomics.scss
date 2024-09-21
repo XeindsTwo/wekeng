@@ -1,5 +1,8 @@
 .tokenomics {
-  margin-bottom: 90px;
+  margin-bottom: 135px;
+  @media (max-width: 390px) {
+    margin-bottom: 100px;
+  }
 
   &__title {
     @media (max-width: 395px) {
